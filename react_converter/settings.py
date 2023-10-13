@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from pydantic import AmqpDsn
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -10,6 +12,7 @@ class Settings(BaseSettings):
     # Service env
     SERVICE_NAME: str = "react"
     DEBUG: bool
+    TEMPLATE: Path = Path("./template.tar.gz")
 
     model_config = SettingsConfigDict(
         case_sensitive=True,
