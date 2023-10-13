@@ -165,3 +165,6 @@ cython_debug/
 
 react_template-master.zip
 example.env
+
+.git/
+.DS_Store
