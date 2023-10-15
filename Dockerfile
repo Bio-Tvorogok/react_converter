@@ -47,4 +47,4 @@ COPY --from=builder /opt/app/template.tar.gz /opt/app/.
 WORKDIR /opt/app
 COPY . .
 
-CMD ["python", "-m", "kraken"]
+CMD ["python", "-m", "react_converter"]
